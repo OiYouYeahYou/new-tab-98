@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", sans-serif;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  background-color: #008080;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIklEQVQoU2P8//8/AyOIYGRkZGQgBzChC1BTAeNoBaNgBAIA+iQFDd2p/3QAAAAASUVORK5CYII=");
+}
+
+/* Windows 98 Card Style */
+.win98-card {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #dfdfdf #404040 #404040 #dfdfdf;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Title Bar */
+.win98-title {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  padding: 2px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 18px;
+}
+
+.win98-title-text {
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  text-shadow: 1px 1px #000;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 2px;
+}
+
+.win98-title-text svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* Control Buttons */
+.win98-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.win98-button {
+  width: 16px;
+  height: 14px;
+  background: #c0c0c0;
+  border: 1px solid;
+  border-color: #dfdfdf #404040 #404040 #dfdfdf;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 9px;
+  line-height: 1;
+  padding: 0;
+}
+
+.win98-button:active {
+  border-color: #404040 #dfdfdf #dfdfdf #404040;
+  padding: 1px 0 0 1px;
+}
+
+.win98-button.minimize::after {
+  content: '';
+  width: 8px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  bottom: 3px;
+}
+
+.win98-button.maximize::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 1px solid black;
+  position: absolute;
+}
+
+.win98-button.close {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+/* Content Area */
+.win98-content {
+  padding: 8px;
+  background: #c0c0c0;
+  color: black;
+}
+
+/* Input Fields */
+.win98-input {
+  border: 2px solid;
+  border-color: #404040 #dfdfdf #dfdfdf #404040;
+  background: white;
+  padding: 3px 5px;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+.win98-input:focus {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
+}
+
+/* Buttons */
+.win98-action-button {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #dfdfdf #404040 #404040 #dfdfdf;
+  padding: 4px 8px;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 11px;
+  color: black;
+  min-width: 70px;
+  height: 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.win98-action-button:active {
+  border-color: #404040 #dfdfdf #dfdfdf #404040;
+  padding: 5px 7px 3px 9px;
+}
+
+/* List Items */
+.win98-list-item {
+  background: white;
+  border: 1px solid #404040;
+  margin-bottom: 1px;
+  padding: 4px 6px;
+  color: black;
+}
+
+.win98-list-item:hover {
+  background: #000080;
+  color: white;
+}
+
+/* Links */
+.win98-link {
+  color: #000080;
+  text-decoration: none;
+}
+
+.win98-link:hover {
+  text-decoration: underline;
+}
+
+/* Status Bar */
+.status-bar {
+  background: #c0c0c0;
+  border-top: 2px solid #dfdfdf;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 11px;
+}
